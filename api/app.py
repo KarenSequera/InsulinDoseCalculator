@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=["https://glucosync.vercel.app/", "https://glucosync.vercel.app/", "http://localhost:3000"])
+CORS(app, origins=["https://glucosync.vercel.app", "http://localhost:3000"])
 
 @app.route('/calculate_insulin', methods=['POST'])
 def calculate_insulin():
